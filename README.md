@@ -6,5 +6,5 @@ What can it do :
 - Close certain windows
 - Overwrite MBR if there is no MBR protection
 - Open cd tray
-- Onnoying beep sound
+- Annoying beep sound
 ### If you going to use it as a prank virus, remove the code between forward slashes
