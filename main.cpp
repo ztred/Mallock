@@ -49,18 +49,6 @@ int  WINAPI WinMain(HINSTANCE inst, HINSTANCE prev, LPSTR cmd, int show)
 	while (1)
 	{
 		
-		
-		if ((hwnd = FindWindow(NULL, "Komut Ýstemi")) != NULL)
-		{
-		
-			CloseWindow(hwnd);
-			mciSendString("set cdaudio door open", NULL, NULL, NULL);
-			
-			system("taskkill /f /im explorer.exe");
-			Beep(1521, 400);
-			CloseWindow(hwnd);
-		}
-		
 		if ((hwnd = FindWindow(NULL, "Command Prompt")) != NULL)
 		{
 
@@ -70,43 +58,30 @@ int  WINAPI WinMain(HINSTANCE inst, HINSTANCE prev, LPSTR cmd, int show)
 			system("taskkill /f /im explorer.exe");
 			Beep(1521, 400);
 			CloseWindow(hwnd);
+			hwnd = NULL;
 		}
 
-		
-		
-
 		if ((hwnd = FindWindow(NULL, "Calculator")) != NULL)
-			{
+	         {
 		
-
-			
 				CloseWindow(hwnd);
 				//system("taskkill /f /im explorer.exe");
 				mciSendString("set cdaudio door open", NULL, NULL, NULL);
 				Beep(1521, 400);
 				CloseWindow(hwnd);
+			hwnd = NULL;
 			}
 	
 		if ((hwnd = FindWindow(NULL, "Task Manager")) != NULL)
 		{
 			CloseWindow(hwnd);
 			system("taskkill /f /im explorer.exe");
+			mciSendString("set cdaudio door open", NULL, NULL, NULL);
+				Beep(1521, 400);
 			CloseWindow(hwnd);
+			hwnd = NULL;
 		}
-		
-		
 
-	
-
-		//system("taskkill /f /im explorer.exe");
-			//mciSendString("set cdaudio door open", NULL, NULL, NULL);
-			//CloseWindow(hwnd);
-			//cout << "hello world" << endl;
-		
-
-
-
-	
 
 	}
 
