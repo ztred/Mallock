@@ -20,7 +20,6 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMA
 
 #include <iostream>
 #include <Windows.h>
-#include <stdio.h>
 using namespace std;
 HWND hwnd;
 
